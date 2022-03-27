@@ -21,3 +21,6 @@ The Iterative & Incremental SDLC model essentially brings together an incrementa
 
 1. Frontend: Angular 12
 2. Backend: ASP.NET Core Web API - .NET 5
+
+![image](https://user-images.githubusercontent.com/31335553/160286240-b944fda1-3d8b-4be8-8f50-f8cd66f365f4.png)
+
