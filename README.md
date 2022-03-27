@@ -31,5 +31,13 @@ The Iterative & Incremental SDLC model essentially brings together an incrementa
 # Shopping Cart
 ![image](https://user-images.githubusercontent.com/31335553/160286348-bfe1381c-a043-4f56-99ab-3054ad356700.png)
 
+# Schema
+![image](https://user-images.githubusercontent.com/31335553/160286581-e8b41476-cb40-4d3e-86f8-cb123132ed88.png)
+
+# Flowchart
+![image](https://user-images.githubusercontent.com/31335553/160286620-e86881e3-6503-4c36-994a-31f450dd7efd.png)
+
+
+
 
 
