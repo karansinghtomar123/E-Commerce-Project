@@ -15,7 +15,7 @@
 
 ## Iterative & Incremental Model
 
-The Iterative & Incremental SDLC model essentially brings together an incremental development model which makes it amongst the best SDLC methodology for business.
+The Iterative & Incremental SDLC model essentially brings together an iterative design with an incremental development model which makes it amongst the best SDLC methodology for business.
 
 # Technologies Used
 
