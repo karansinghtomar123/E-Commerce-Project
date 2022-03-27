@@ -19,5 +19,5 @@ The Iterative & Incremental SDLC model essentially brings together an incrementa
 
 # Technologies Used
 
-Frontend: 
+Frontend: Angular 12
 Backend: ASP.NET Core Web API - .NET 5
