@@ -16,3 +16,8 @@
 ## Iterative & Incremental Model
 
 The Iterative & Incremental SDLC model essentially brings together an incremental development model which makes it amongst the best SDLC methodology for business.
+
+# Technologies Used
+
+Frontend: 
+Backend: ASP.NET Core Web API - .NET 5
