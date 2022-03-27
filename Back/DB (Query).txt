@@ -1,0 +1,84 @@
+CREATE TABLE [dbo].[cart_item] (
+[Id] INT NOT NULL,
+[session_id] INT NOT NULL,
+[product_id] INT NOT NULL,
+[quantity] INT NOT NULL,
+[created_at] ROWVERSION NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[discount] (
+[Id] INT NOT NULL,
+[name] VARCHAR (50) NOT NULL,
+[desc] TEXT NOT NULL,
+[discount_percent] DECIMAL (18) NOT NULL,
+[created_at] ROWVERSION NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[order_details] (
+[Id] INT NOT NULL,
+[user_id] VARCHAR (50) NOT NULL,
+[total] DECIMAL (18) NOT NULL,
+[payment_id] INT NOT NULL,
+[created_at] ROWVERSION NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[order_items] (
+[Id] INT NOT NULL,
+[order_id] INT NOT NULL,
+[product_id] INT NOT NULL,
+[created_at] ROWVERSION NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[payment_details] (
+[Id] INT NOT NULL,
+[order_id] INT NOT NULL,
+[amount] INT NOT NULL,
+[provider] VARCHAR (1) NOT NULL,
+[status] VARCHAR (1) NOT NULL,
+[created_at] ROWVERSION NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[product] (
+[Id] INT NOT NULL,
+[name] VARCHAR (50) NOT NULL,
+[desc] TEXT NOT NULL,
+[SKU] VARCHAR (50) NOT NULL,
+[category] VARCHAR (50) NOT NULL,
+[price] DECIMAL (18) NOT NULL,
+[discount_id] INT NOT NULL,
+[created_at] ROWVERSION NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[product_type] (
+[Id] INT NOT NULL,
+[Women's] VARCHAR (50) NOT NULL,
+[Men] VARCHAR (50) NOT NULL,
+[Kid] VARCHAR (50) NOT NULL,
+[Electronic Devices] VARCHAR (50) NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[user] (
+[Id] INT NOT NULL,
+[username] VARCHAR (50) NOT NULL,
+[password] TEXT NOT NULL,
+[first_name] VARCHAR (50) NOT NULL,
+[last_name] VARCHAR (50) NOT NULL,
+[address] VARCHAR (50) NOT NULL,
+[telephone] INT NOT NULL,
+[created_at] ROWVERSION NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] ASC)
+);
