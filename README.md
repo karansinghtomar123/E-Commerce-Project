@@ -111,10 +111,9 @@ PRIMARY KEY CLUSTERED ([Id] ASC)
 
 CREATE TABLE [dbo].[product_type] (
 [Id] INT NOT NULL,
-[Women's] VARCHAR (50) NOT NULL,
-[Men] VARCHAR (50) NOT NULL,
-[Kid] VARCHAR (50) NOT NULL,
-[Electronic Devices] VARCHAR (50) NOT NULL,
+[Electronic] VARCHAR (50) NOT NULL,
+[Fashion] VARCHAR (50) NOT NULL,
+[Jwellery] VARCHAR (50) NOT NULL,
 PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
